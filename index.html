@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stop Watch</title>
-    <!-- import css file -->
+    <title>Stopwatch</title>
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- main container -->
+    <!-- main -->
     <div id="container">
-      <!-- Time container -->
       <!-- hr, min, sec, msec -->
       <div id="time">
         <span class="digit" id="hr">00</span>
@@ -21,7 +20,6 @@
 
         <span class="digit" id="min">00</span>
 
-        <!-- colon only display in small devices -->
         <span class="colon">:</span>
         <span class="text">Min</span>
 
@@ -31,18 +29,18 @@
         <span class="digit" id="msec">00</span>
       </div>
 
-      <!-- btns-container -->
+      <!-- buttons -->
       <div id="btns-container">
-        <!-- Start button -->
+        <!-- Start -->
         <button id="start" class="buttons" onclick="start()">START</button>
-        <!-- Stop btn -->
+        <!-- Stop -->
         <button id="stop" class="buttons" onclick="stop()">STOP</button>
-        <!-- Reset button -->
+        <!-- Reset -->
         <button id="reset" class="buttons" onclick="reset()">RESET</button>
       </div>
     </div>
 
-    <!-- import javaScript file -->
+    <!-- js -->
     <script src="app.js"></script>
   </body>
 </html>

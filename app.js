@@ -2,21 +2,21 @@ let hr = 0;
 let min = 0;
 let sec = 0;
 let msec = 0;
-// by defualt timer is false
+// timer is stopped
 let timer = false;
-// after clicking on start btn timer get true and start running
+// clicking on start button timer starts
 function start(){
     timer = true;
     stopWatch();
 }
-// after clicking on reset btn timer set defualt and reset everything
+// clicking on reset, timer set defualt and resets
 function reset(){
     timer = false;
     hr = 0;
     min = 0;
     sec = 0;
     msec = 0;
-// displaying String value "00" on reset position
+// displaying value on reset position
         document.getElementById("hr").innerHTML = "00";
         
         document.getElementById("min").innerHTML = "00";
@@ -31,20 +31,20 @@ function stop(){
 }
 
 function stopWatch(){
-// timer get true and increase msec by 1.
+// timer gets true and increase msec by 1.
     if(timer == true){
         msec += 1;
-// when msec reach 100 inceaesing the sec value and reset the msc value at 0 .
+// when msec reach 100 increasing the sec value and reset the value at 0 .
     if(msec == 100){
         sec += 1;
         msec = 0;
     }
-// when sec reach 60 inceaesing the min value and reset the sec value at 0.
+// when sec reach 60 increasing the min value and reset the value at 0.
     if(sec == 60){
         min += 1;
         sec = 0;
     }
-// when min reach 60 inceaesing the hr value and reset the sec and msc value at 0.
+// when min reach 60 increasing the hr value and reset the value at 0.
     if(min == 60){
         hr += 1;
         min = 0;
